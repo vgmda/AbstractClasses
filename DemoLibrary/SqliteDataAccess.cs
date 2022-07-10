@@ -4,24 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoLibrary
+namespace DemoLibrary;
+
+public class SqliteDataAccess : IDataAccess
 {
-    public class SqliteDataAccess : IDataAccess
+    public string LoadConnectionString(string name)
     {
-        public string LoadConnectionString(string name)
-        {
-            Console.WriteLine("Load Connection String");
-            return "testConnectionString";
-        }
+        Console.WriteLine("Load Connection String");
+        return "testConnectionString";
+    }
 
-        public void LoadData(string sql)
-        {
-            Console.WriteLine("Loading SQLite Data");
-        }
+    public void LoadData(string sql)
+    {
+        Console.WriteLine("Loading SQLite Data");
+    }
 
-        public void SaveData(string sql)
-        {
-            Console.WriteLine("Saving data to SQLite");
-        }
+    public void SaveData(string sql)
+    {
+        Console.WriteLine("Saving data to SQLite");
     }
 }
