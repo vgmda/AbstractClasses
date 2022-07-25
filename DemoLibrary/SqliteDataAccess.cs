@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary;
 
-public class SqliteDataAccess : IDataAccess
+public class SqliteDataAccess : DataAccess
 {
-    public string LoadConnectionString(string name)
+    public override string LoadConnectionString(string name)
     {
-        Console.WriteLine("Load Connection String");
-        return "testConnectionString";
+        string output = base.LoadConnectionString(name);
+        return output += " (from SQLite)";
     }
 
-    public void LoadData(string sql)
+    public override void LoadData(string sql)
     {
         Console.WriteLine("Loading SQLite Data");
     }
 
-    public void SaveData(string sql)
+    public override void SaveData(string sql)
     {
         Console.WriteLine("Saving data to SQLite");
     }

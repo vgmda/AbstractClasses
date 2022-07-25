@@ -9,12 +9,12 @@ namespace DemoLibrary;
 public class SqlDataAccess : DataAccess
 {
 
-    public void LoadData(string sql)
+    public override void LoadData(string sql)
     {
         Console.WriteLine("Loading Microsoft SQL Data");
     }
 
-    public void SaveData(string sql)
+    public override void SaveData(string sql)
     {
         Console.WriteLine("Saving data to Microsoft SQL Server");
     }
