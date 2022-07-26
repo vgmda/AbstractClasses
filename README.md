@@ -4,6 +4,9 @@
 
 Data **abstraction** is the process of hiding specific details and showing only essential information to the user. To achieve **abstraction**, the keyword `abstract` is used.
 
+*   **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+*   **Abstract method:** It can only be used in an abstract class and does not have a body. The body is provided by the derived class (inherited from).
+
 ```c#
 public abstract class DataAccess
 {
