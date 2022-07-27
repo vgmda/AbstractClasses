@@ -26,7 +26,9 @@ public abstract class DataAccess
 }
 ```
 
-```
+Below is a snippet of code where `SqliteDataAccess` class inherits from `DataAccess`, therefore it `overrides` the methods from the abstract class. 
+
+```c#
 public class SqliteDataAccess : DataAccess
 {
    public override string LoadConnectionString(string name)
