@@ -7,6 +7,12 @@ Data **abstraction** is the process of hiding specific details and showing only 
 *   **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
 *   **Abstract method:** It can only be used in an abstract class and does not have a body. The body is provided by the derived class (inherited from).
 
+Below is an example of `DataAccess` an abstract class with three methods:
+
+`LoadConnectionString` - A virtual method provides an implementation option, and the derived class can override.
+
+`LoadData` and `SaveData` - Are abstract methods and do not provide an implementation option meaning the class that inherits it will **have** to override it. 
+
 ```c#
 public abstract class DataAccess
 {
