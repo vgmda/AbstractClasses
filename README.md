@@ -53,4 +53,7 @@ public class SqliteDataAccess : DataAccess
 ## Virtual Method
 * Virtual Method can reside in abstract and non-abstract class.
 * It is not necessary to override virtual method in derived but it can be.
-* Virtual method must have body can be overridden by "override keyword"
+* Virtual method must have body can be overridden by "override keyword".
+
+## Summary
+Abstract classes usually provide default or template functionality, and private members. Interfaces are much more minimal, only giving public methods. This means that interfaces are great for the 'I' in SOLID coding, if a class A implements interface I, then other functions that take objects of type I as a param can work while knowing almost nothing about that param. Functions that expect an Abstract Class as a parameter (or attribute) have to know a lot about it, which creates tighter coupling. 
