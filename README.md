@@ -46,3 +46,11 @@ public class SqliteDataAccess : DataAccess
    }
 }
 ```
+
+## Abstract Method
+* Abstract Method resides in abstract class and it has no body.
+* Abstract Method must be overridden in non-abstract child class.
+## Virtual Method
+* Virtual Method can reside in abstract and non-abstract class.
+* It is not necessary to override virtual method in derived but it can be.
+* Virtual method must have body can be overridden by "override keyword"
