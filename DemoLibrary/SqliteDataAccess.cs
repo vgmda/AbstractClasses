@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary;
 
+
+// SqliteDataAccess class which inherts from abstract DataAccess class
 public class SqliteDataAccess : DataAccess
 {
     public override string LoadConnectionString(string name)

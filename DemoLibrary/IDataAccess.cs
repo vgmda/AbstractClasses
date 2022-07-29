@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary;
 
+// Interface IDataAccess
+
 public interface IDataAccess
 {
     string LoadConnectionString(string name);
